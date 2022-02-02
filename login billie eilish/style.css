@@ -1,0 +1,248 @@
+/*////////////////////////////////////
+======== RESET ========
+///////////////////////////////////*/
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/*////////////////////////////////////
+======== body ========
+///////////////////////////////////*/
+
+
+
+body{
+	background: url("img/background.svg");
+}
+
+.img{
+	height: 800px;
+	border-radius: 15px;
+
+	background: url("img/billie-eilish-red-lights_6840x4560_xtrafondos.com.png");
+	background-size: cover;
+}
+
+
+p{
+	color: white;
+	font-size: 20px;
+}
+
+/*welcome*/
+
+.container{
+	height: 800px;
+	width: 1400px;
+	border-radius: 15px;
+	margin-top: 50px;
+	background: black;
+}
+
+#nav {padding: 20px;}
+
+#welcome{
+	margin-top: 60px;
+	margin-left: 10px;
+}
+
+#login{
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+/*Textboxs*/
+
+.textBox{
+	height: 40px;
+	width: 90%;
+	margin-left: 20px;
+	border-radius: 5px;
+
+	background-color: black;
+	border: 1px solid #BA3E04;
+	color: white;
+	
+	font-size: 20px;
+	line-height: 100px;
+}
+
+#formEmail{margin-top: 50px;}
+
+input[type="email"] {
+    box-sizing: border-box;
+    padding-left: 50px;
+	margin-bottom: 1px;
+}
+
+input[type="password"] {
+    box-sizing: border-box;
+    padding-left: 50px;
+}
+
+.image{
+	background-repeat: no-repeat;
+	background-position: 10px center;
+}
+
+.email{
+	background-size: 25px 15px;
+	background-image: url("img/Icon\ ionic-ios-mail.png");
+}
+
+.key{
+	background-size: 20px 20px;
+	background-image: url("img/Icon\ feather-key.png");
+}
+
+#textBoxPassword{
+	background-image: url("img/Icon\ feather-key.png");
+	background-repeat: no-repeat;
+	background-position: 10px center;
+	
+	color: #BA3E04;
+	font-size: 40px;
+}
+
+/* CheckBox */
+[type="checkbox"] {display: none;}
+
+label{
+	padding-left: 1.3em;
+	position: relative;
+	left: 30px;
+
+	color: white;
+	font-size: 20px;
+}
+
+label::before{
+	position: absolute;
+	left: -30px;
+	top: 0px;
+	
+	content: ' ';
+	height: 30px;
+	width: 30px;
+	border-radius: 3px;
+
+	border: 1px solid #BA3E04;
+	background: #BA3E04;
+}
+	
+
+[type="checkbox"]:checked + label:before {
+	content: '\f00c';
+	font-family: FontAwesome ;
+	font-size: 20px;
+	text-align: center;
+}
+
+/* forgot password*/
+
+a:link, a:visited, a:active {text-decoration:none;}
+
+#forgot{
+	color:#BA3E04;
+	font-size: 20px;
+}
+
+/* buttons */
+
+.button{
+	height: 50px;
+	width: 200px;
+	border-radius: 3px;
+	border: 1px solid #BA3E04;
+
+	text-align: center;
+}
+
+.login{
+	margin-left: 20px;
+	background-color: #BA3E04;
+	color: white;
+}
+
+.login:hover{
+	color: #BA3E04;
+	background-color: transparent;
+}
+
+.createAccount{
+	margin-right: 50px;
+	background-color: transparent;
+	color: #BA3E04; 
+}
+
+.createAccount:hover{
+	color: white;
+	background-color: #BA3E04;
+}
+
+
+
+/* login with */
+.loginText{color: #BA3E04;}
+
+.loginButtons > a{
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+
+
+
+
+
+
+
